@@ -5,5 +5,7 @@ Vagrant.configure("2") do |config|
  #provision with shell
  #config.vm.provision "shell", path: "provision.sh" 
  #provision with chef 
- config.vm.provision "chef_solo", run_list: ["vagrant_book"]
+ #config.vm.provision "chef_solo", run_list: ["vagrant_book"]
+ #provision with puppet 
+ config.vm.provision "puppet"
 end
